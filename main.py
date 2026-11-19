@@ -21,3 +21,11 @@ streamer.add_donate(500)
 streamer.add_donate(150)
 
 print("Код класса Стример загружен")
+def print_stats(streamer):
+    print("Никнейм:", streamer.nickname)
+    print("Подписчики:", streamer.subscribers)
+    print("Общая сумма донатов:", streamer.total_donates())
+    print("Средний донат:", streamer.average_donate())
+
+
+print_stats(streamer)
